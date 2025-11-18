@@ -1,0 +1,295 @@
+{
+  "version": "1.0.0",
+  "hooks": [
+    {
+      "id": "onPluginLoad",
+      "name": "Plugin Initialization",
+      "description": "Runs when plugin is first loaded",
+      "trigger": "plugin-load",
+      "enabled": true,
+      "actions": [
+        {
+          "type": "initialize-user-context",
+          "description": "Initialize user learning context and preferences"
+        },
+        {
+          "type": "check-version",
+          "description": "Check for plugin updates"
+        },
+        {
+          "type": "load-learning-progress",
+          "description": "Load user's previous learning progress"
+        }
+      ]
+    },
+    {
+      "id": "onLearnCommand",
+      "name": "Learn Command Handler",
+      "description": "Triggers when /learn command is executed",
+      "trigger": "command:learn",
+      "enabled": true,
+      "actions": [
+        {
+          "type": "show-role-selector",
+          "description": "Display 70 roles to choose from"
+        },
+        {
+          "type": "load-agent",
+          "description": "Load appropriate specialist agent"
+        },
+        {
+          "type": "create-learning-path",
+          "description": "Generate personalized learning roadmap"
+        },
+        {
+          "type": "save-user-choice",
+          "description": "Save selected role and path"
+        }
+      ]
+    },
+    {
+      "id": "onAssessCommand",
+      "name": "Assessment Handler",
+      "description": "Triggers when /assess command is executed",
+      "trigger": "command:assess",
+      "enabled": true,
+      "actions": [
+        {
+          "type": "start-assessment",
+          "description": "Begin knowledge assessment"
+        },
+        {
+          "type": "evaluate-answers",
+          "description": "Evaluate assessment responses"
+        },
+        {
+          "type": "generate-report",
+          "description": "Generate personalized skill report"
+        },
+        {
+          "type": "recommend-path",
+          "description": "Recommend learning adjustments"
+        },
+        {
+          "type": "save-assessment",
+          "description": "Save assessment results for tracking"
+        }
+      ]
+    },
+    {
+      "id": "onBrowseAgent",
+      "name": "Agent Explorer",
+      "description": "Triggers when /browse-agent command is executed",
+      "trigger": "command:browse-agent",
+      "enabled": true,
+      "actions": [
+        {
+          "type": "list-agents",
+          "description": "Display all 7 specialist agents"
+        },
+        {
+          "type": "show-role-breakdown",
+          "description": "Show roles covered by each agent"
+        },
+        {
+          "type": "load-agent-details",
+          "description": "Load detailed agent information"
+        }
+      ]
+    },
+    {
+      "id": "onProgressTracking",
+      "name": "Progress Tracking",
+      "description": "Tracks user learning progress",
+      "trigger": "user-interaction",
+      "enabled": true,
+      "actions": [
+        {
+          "type": "log-interaction",
+          "description": "Log user interactions with agents and skills"
+        },
+        {
+          "type": "update-progress",
+          "description": "Update learning progress"
+        },
+        {
+          "type": "calculate-completion",
+          "description": "Calculate section/path completion percentage"
+        },
+        {
+          "type": "trigger-milestone",
+          "description": "Trigger celebrations for milestones"
+        }
+      ]
+    },
+    {
+      "id": "onSkillAccess",
+      "name": "Skill Loading",
+      "description": "Triggers when a skill is accessed",
+      "trigger": "skill-access",
+      "enabled": true,
+      "actions": [
+        {
+          "type": "load-skill-content",
+          "description": "Load SKILL.md content"
+        },
+        {
+          "type": "log-skill-view",
+          "description": "Log skill viewing for progress tracking"
+        },
+        {
+          "type": "suggest-related-skills",
+          "description": "Suggest related skills and resources"
+        },
+        {
+          "type": "show-examples",
+          "description": "Display code examples and resources"
+        }
+      ]
+    },
+    {
+      "id": "onAgentInvoke",
+      "name": "Agent Invocation",
+      "description": "Triggers when an agent is invoked",
+      "trigger": "agent-invoke",
+      "enabled": true,
+      "actions": [
+        {
+          "type": "load-agent-context",
+          "description": "Load agent expertise context"
+        },
+        {
+          "type": "activate-agent-skills",
+          "description": "Activate relevant skills for agent"
+        },
+        {
+          "type": "provide-guidance",
+          "description": "Provide personalized agent guidance"
+        }
+      ]
+    },
+    {
+      "id": "onErrorHandling",
+      "name": "Error Handling",
+      "description": "Global error handler",
+      "trigger": "error",
+      "enabled": true,
+      "actions": [
+        {
+          "type": "log-error",
+          "description": "Log error details"
+        },
+        {
+          "type": "show-help",
+          "description": "Show helpful error message"
+        },
+        {
+          "type": "suggest-alternative",
+          "description": "Suggest alternative actions"
+        }
+      ]
+    },
+    {
+      "id": "onDailyCheckIn",
+      "name": "Daily Check-in",
+      "description": "Daily learning engagement check",
+      "trigger": "daily-check-in",
+      "enabled": true,
+      "actions": [
+        {
+          "type": "show-progress-summary",
+          "description": "Show weekly progress summary"
+        },
+        {
+          "type": "motivate-user",
+          "description": "Provide motivation and encouragement"
+        },
+        {
+          "type": "suggest-today-focus",
+          "description": "Suggest today's learning focus"
+        },
+        {
+          "type": "offer-quick-learning",
+          "description": "Offer quick 5-10 min learning modules"
+        }
+      ]
+    },
+    {
+      "id": "onWeeklyReview",
+      "name": "Weekly Learning Review",
+      "description": "Weekly progress review and adjustment",
+      "trigger": "weekly-review",
+      "enabled": true,
+      "actions": [
+        {
+          "type": "generate-weekly-report",
+          "description": "Generate weekly learning report"
+        },
+        {
+          "type": "identify-gaps",
+          "description": "Identify learning gaps"
+        },
+        {
+          "type": "adjust-path",
+          "description": "Adjust learning path if needed"
+        },
+        {
+          "type": "celebrate-wins",
+          "description": "Celebrate learning achievements"
+        },
+        {
+          "type": "plan-next-week",
+          "description": "Plan next week's learning focus"
+        }
+      ]
+    }
+  ],
+  "configuration": {
+    "enableProgressTracking": true,
+    "enableDailyReminders": true,
+    "enableWeeklyReview": true,
+    "enableAutoSave": true,
+    "autoSaveInterval": 300000,
+    "enableMilestoneAlerts": true,
+    "enableCommunitySharing": true,
+    "storageType": "local",
+    "maxProgressHistory": 12,
+    "analyticsEnabled": true
+  },
+  "automation": {
+    "progressSaving": {
+      "enabled": true,
+      "frequency": "on-change",
+      "backup": "daily"
+    },
+    "recommendations": {
+      "enabled": true,
+      "frequency": "weekly",
+      "personalized": true
+    },
+    "notifications": {
+      "enabled": true,
+      "frequency": "daily",
+      "types": ["milestone", "reminder", "suggestion"]
+    },
+    "reporting": {
+      "enabled": true,
+      "frequency": "weekly",
+      "format": "detailed"
+    }
+  },
+  "integrations": {
+    "github": {
+      "enabled": true,
+      "trackRepositories": true
+    },
+    "slack": {
+      "enabled": false,
+      "shareProgress": false
+    },
+    "calendar": {
+      "enabled": true,
+      "addLearningEvents": true
+    }
+  }
+}
