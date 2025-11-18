@@ -1,79 +1,74 @@
 # /learn
 
-Start your personalized learning journey through the developer roadmap.
+Start your personalized Data Analyst learning journey.
 
 ## Overview
 
-This command helps you:
-- Choose a role to specialize in
-- Get a structured learning path
-- Track your progress
-- Access relevant agents and skills
-- Find project-based learning
+This command guides you through a structured learning path tailored to your experience level and goals.
 
-## Usage
+## Learning Levels
+
+### 🟢 Beginner (0-6 months)
+- Foundations with Excel, Google Sheets
+- SQL basics and database fundamentals
+- Descriptive statistics and data collection
+- **Timeline**: 6 months of dedicated study
+- **Salary Range**: $40K-$65K
+
+### 🟡 Intermediate (6-18 months)
+- Advanced SQL optimization and database design
+- Statistical analysis and hypothesis testing
+- Python/R programming for data analysis
+- Power BI or Tableau visualization
+- **Timeline**: 12 months of professional experience
+- **Salary Range**: $65K-$90K
+
+### 🔴 Advanced (18+ months)
+- Predictive modeling and regression analysis
+- Advanced analytics and machine learning
+- Complex data mining and pattern discovery
+- Leadership and strategic analytics
+- **Timeline**: 18+ months of professional experience
+- **Salary Range**: $90K-$140K+
+
+## How to Use
 
 ```
 /learn
 ```
 
-## What You'll Get
-
-After running this command, you'll be able to:
-
-1. **Select a Role** - Choose from 70+ developer roles
-2. **Choose Agent** - Get guided by a specialized agent
-3. **Get Roadmap** - Receive a structured learning path with timeframes
-4. **Access Skills** - Unlock relevant SKILL.md resources
-5. **Find Projects** - Get real-world project recommendations
-6. **Track Progress** - Monitor your learning journey
+Select your starting point, and get a personalized learning path with:
+- Skill progression timeline
+- Recommended projects
+- Milestone checkpoints
+- Career advancement steps
 
 ## Example Paths
 
-### Frontend Developer Path
-```
-Week 1-4:   HTML, CSS, JavaScript Fundamentals
-Week 5-12:  Choose Framework (React/Vue/Angular)
-Week 13-16: Styling & Design Systems
-Week 17-20: Testing & Performance
-```
+**Fast-Track (6 months)**
+1. Excel Fundamentals (4 weeks)
+2. SQL Basics (4 weeks)
+3. Descriptive Statistics (2 weeks)
+4. Power BI Intro (2 weeks)
+5. First Portfolio Project
 
-### Backend Developer Path
-```
-Week 1-4:   Programming Fundamentals
-Week 5-12:  Language Mastery (Node/Python/Go/Rust)
-Week 13-16: API Design & Database
-Week 17-20: Advanced Patterns & Scaling
-```
-
-### Data Scientist Path
-```
-Week 1-4:   Math & Python Basics
-Week 5-12:  Machine Learning Fundamentals
-Week 13-16: Advanced ML & Deep Learning
-Week 17-20: Model Deployment & MLOps
-```
-
-## Features
-
-✅ Personalized learning paths
-✅ Time estimates for each phase
-✅ Real-world projects
-✅ Connected agents for guidance
-✅ Skill resources at each level
-✅ Progress tracking
-✅ Community support
+**Comprehensive (12 months)**
+1. Excel Mastery (6 weeks)
+2. Google Sheets Collaboration (2 weeks)
+3. SQL Fundamentals (6 weeks)
+4. SQL Advanced (4 weeks)
+5. Statistics & Probability (6 weeks)
+6. Python Basics (6 weeks)
+7. Pandas & Data Manipulation (4 weeks)
+8. Power BI Dashboard Design (4 weeks)
+9. Portfolio Projects (4 weeks)
 
 ## Next Steps
 
 1. Run `/learn`
-2. Select your desired role
-3. Follow the structured pathway
-4. Use `/browse-agent` to explore specialists
-5. Use `/assess` to evaluate knowledge
-
-## Support
-
-- Use `/help` for general assistance
-- Check roadmap documentation
-- Contact the developer community
+2. Select your experience level
+3. Choose your learning path
+4. Access recommended skills
+5. Start with first module
+6. Build portfolio projects
+7. Track progress with `/progress`

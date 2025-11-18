@@ -1,248 +1,211 @@
 {
-  "name": "developer-roadmap",
+  "name": "data-analyst-roadmap",
   "version": "1.0.0",
   "type": "plugin",
-  "displayName": "🚀 Developer Roadmap Plugin",
-  "description": "Ultra-comprehensive developer learning platform with 70+ roles, 7 specialized agents, and 28+ invokable skills. Master any technology through structured learning paths, hands-on projects, and expert guidance.",
+  "displayName": "📊 Data Analyst Roadmap",
+  "description": "Complete Data Analyst learning platform with 7 specialized agents, hands-on projects, and career guidance. Master Excel, SQL, Python, Statistics, Power BI, and advance your analytics career from beginner to senior level.",
   "author": "Claude Developer Learning Community",
   "license": "MIT",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-data-analyst",
   "keywords": [
+    "data-analyst",
+    "data-analysis",
     "learning",
-    "development",
-    "roadmap",
     "career-growth",
-    "agent-based",
-    "skills",
-    "programming",
-    "data-engineering",
-    "devops",
-    "mobile",
-    "frontend",
-    "backend"
+    "sql",
+    "python",
+    "power-bi",
+    "statistics",
+    "visualization",
+    "spreadsheet",
+    "analytics"
   ],
   "agents": [
     {
-      "id": "frontend-ui-specialist",
-      "name": "Frontend & UI Development Specialist",
-      "file": "agents/01-frontend-ui-specialist.md",
-      "description": "Expert in web frontend, UI frameworks, and design systems (12 roles)"
+      "id": "foundations-agent",
+      "name": "Foundations & Fundamentals Specialist",
+      "file": "agents/01-foundations-specialist.md",
+      "description": "Master data analysis fundamentals, Excel, Google Sheets, data collection, and core concepts for data analysts."
     },
     {
-      "id": "backend-apis-architect",
-      "name": "Backend & APIs Architect",
-      "file": "agents/02-backend-apis-architect.md",
-      "description": "Specialized in server-side development and API design (10 roles)"
+      "id": "sql-databases-agent",
+      "name": "SQL & Databases Expert",
+      "file": "agents/02-sql-databases-expert.md",
+      "description": "Expert in SQL querying, database design, data retrieval, and working with relational databases."
     },
     {
-      "id": "data-aiml-engineer",
-      "name": "Data & AI/ML Engineer",
-      "file": "agents/03-data-aiml-engineer.md",
-      "description": "Expert in data pipelines, ML frameworks, and AI systems (8 roles)"
+      "id": "statistics-agent",
+      "name": "Statistics & Statistical Analysis Specialist",
+      "file": "agents/03-statistics-specialist.md",
+      "description": "Master statistical analysis, hypothesis testing, probability, distributions, and inferential statistics."
     },
     {
-      "id": "devops-infrastructure-specialist",
-      "name": "DevOps & Infrastructure Specialist",
-      "file": "agents/04-devops-infrastructure-specialist.md",
-      "description": "Specialized in cloud, containerization, and infrastructure (8 roles)"
+      "id": "visualization-agent",
+      "name": "Visualization & BI Tools Architect",
+      "file": "agents/04-visualization-architect.md",
+      "description": "Expert in Power BI, Tableau, Google Data Studio, dashboard design, and data storytelling."
     },
     {
-      "id": "database-systems-architect",
-      "name": "Database & Systems Architect",
-      "file": "agents/05-database-systems-architect.md",
-      "description": "Expert in database design, systems architecture, and scalability (8 roles)"
+      "id": "programming-agent",
+      "name": "Python & R Programming Expert",
+      "file": "agents/05-programming-expert.md",
+      "description": "Master Python, R, pandas, NumPy, data manipulation, and programming for data analysis."
     },
     {
-      "id": "mobile-gaming-developer",
-      "name": "Mobile & Gaming Developer",
-      "file": "agents/06-mobile-gaming-developer.md",
-      "description": "Specialized in iOS, Android, Flutter, React Native, and game development (6 roles)"
+      "id": "advanced-analytics-agent",
+      "name": "Advanced Analytics & Modeling Specialist",
+      "file": "agents/06-advanced-analytics-specialist.md",
+      "description": "Expert in predictive modeling, regression analysis, machine learning basics, and advanced analytics."
     },
     {
-      "id": "management-specialized",
-      "name": "Management & Specialized Roles",
-      "file": "agents/07-management-specialized.md",
-      "description": "Leadership, QA, security, blockchain, prompt engineering, and DevRel (9 roles)"
+      "id": "career-agent",
+      "name": "Career Development & Communication Coach",
+      "file": "agents/07-career-coach.md",
+      "description": "Guide for career progression, communication skills, leadership, and advancing as a data analyst."
     }
   ],
   "commands": [
     {
       "name": "learn",
       "file": "commands/learn.md",
-      "description": "Start your learning journey - choose a role and get personalized guidance"
+      "description": "Start your data analyst learning journey with personalized paths"
     },
     {
-      "name": "browse-agent",
-      "file": "commands/browse-agent.md",
-      "description": "Explore all 7 agents and 70+ roles available in the roadmap"
+      "name": "explore",
+      "file": "commands/explore.md",
+      "description": "Explore all 7 specialist agents and their expertise areas"
     },
     {
-      "name": "assess",
-      "file": "commands/assess.md",
-      "description": "Evaluate your knowledge with assessments and get recommendations"
+      "name": "progress",
+      "file": "commands/progress.md",
+      "description": "Track your learning progress and get recommendations"
     },
     {
-      "name": "marketplace",
-      "file": "commands/marketplace.md",
-      "description": "Browse and add complementary plugins from the marketplace"
+      "name": "projects",
+      "file": "commands/projects.md",
+      "description": "Discover hands-on data analyst projects at all levels"
     }
   ],
   "skills": [
     {
-      "name": "frontend-ui-tools",
-      "category": "frontend-ui",
-      "file": "skills/frontend-ui/frontend-ui-tools.md",
-      "description": "React, Vue, Angular, and design system frameworks"
+      "name": "excel-fundamentals",
+      "category": "foundations",
+      "file": "skills/foundations/excel-fundamentals.md",
+      "description": "Master Excel, formulas, pivot tables, data cleaning, and spreadsheet analysis."
     },
     {
-      "name": "frontend-styling",
-      "category": "frontend-ui",
-      "file": "skills/frontend-ui/frontend-styling.md",
-      "description": "CSS, Tailwind, CSS-in-JS, and styling solutions"
+      "name": "google-sheets",
+      "category": "foundations",
+      "file": "skills/foundations/google-sheets.md",
+      "description": "Learn Google Sheets, collaborative features, and cloud-based analytics."
     },
     {
-      "name": "frontend-performance",
-      "category": "frontend-ui",
-      "file": "skills/frontend-ui/frontend-performance.md",
-      "description": "Optimization, bundling, and web vitals"
+      "name": "data-collection",
+      "category": "foundations",
+      "file": "skills/foundations/data-collection.md",
+      "description": "Master data collection, ingestion, API usage, and data sources."
     },
     {
-      "name": "ux-design-fundamentals",
-      "category": "frontend-ui",
-      "file": "skills/frontend-ui/ux-design-fundamentals.md",
-      "description": "UX research, Figma, and accessibility (WCAG)"
+      "name": "sql-basics",
+      "category": "databases",
+      "file": "skills/databases-sql/sql-basics.md",
+      "description": "SQL fundamentals, SELECT, WHERE, JOIN, aggregation, and queries."
     },
     {
-      "name": "backend-languages",
-      "category": "backend-apis",
-      "file": "skills/backend-apis/backend-languages.md",
-      "description": "Node.js, Python, Go, Rust, PHP, Java fundamentals"
-    },
-    {
-      "name": "api-design",
-      "category": "backend-apis",
-      "file": "skills/backend-apis/api-design.md",
-      "description": "REST, GraphQL, API security, and best practices"
-    },
-    {
-      "name": "backend-frameworks",
-      "category": "backend-apis",
-      "file": "skills/backend-apis/backend-frameworks.md",
-      "description": "Spring Boot, ASP.NET Core, Express, and frameworks"
-    },
-    {
-      "name": "data-pipelines",
-      "category": "data-aiml",
-      "file": "skills/data-aiml/data-pipelines.md",
-      "description": "ETL, data engineering, and pipeline architecture"
-    },
-    {
-      "name": "machine-learning",
-      "category": "data-aiml",
-      "file": "skills/data-aiml/machine-learning.md",
-      "description": "ML frameworks, model training, and deployment"
-    },
-    {
-      "name": "prompt-engineering",
-      "category": "data-aiml",
-      "file": "skills/data-aiml/prompt-engineering.md",
-      "description": "LLM interaction design and AI agent orchestration"
-    },
-    {
-      "name": "devops-tools",
-      "category": "devops-infra",
-      "file": "skills/devops-infra/devops-tools.md",
-      "description": "Docker, Kubernetes, CI/CD, and automation"
-    },
-    {
-      "name": "cloud-platforms",
-      "category": "devops-infra",
-      "file": "skills/devops-infra/cloud-platforms.md",
-      "description": "AWS, GCP, Azure, and cloud architecture"
-    },
-    {
-      "name": "infrastructure-as-code",
-      "category": "devops-infra",
-      "file": "skills/devops-infra/infrastructure-as-code.md",
-      "description": "Terraform, CloudFormation, and IaC practices"
+      "name": "sql-advanced",
+      "category": "databases",
+      "file": "skills/databases-sql/sql-advanced.md",
+      "description": "Advanced SQL, window functions, CTEs, query optimization, and performance."
     },
     {
       "name": "database-design",
-      "category": "database-systems",
-      "file": "skills/database-systems/database-design.md",
-      "description": "PostgreSQL, MongoDB, Redis, and data modeling"
+      "category": "databases",
+      "file": "skills/databases-sql/database-design.md",
+      "description": "Database design, normalization, indexing, and working with databases."
     },
     {
-      "name": "system-design",
-      "category": "database-systems",
-      "file": "skills/database-systems/system-design.md",
-      "description": "Distributed systems, scalability, and architecture patterns"
+      "name": "descriptive-statistics",
+      "category": "statistics",
+      "file": "skills/statistics/descriptive-statistics.md",
+      "description": "Mean, median, mode, variance, distribution, and data description."
     },
     {
-      "name": "performance-optimization",
-      "category": "database-systems",
-      "file": "skills/database-systems/performance-optimization.md",
-      "description": "Caching, indexing, and query optimization"
+      "name": "inferential-statistics",
+      "category": "statistics",
+      "file": "skills/statistics/inferential-statistics.md",
+      "description": "Hypothesis testing, confidence intervals, p-values, and statistical inference."
     },
     {
-      "name": "mobile-development",
-      "category": "mobile-gaming",
-      "file": "skills/mobile-gaming/mobile-development.md",
-      "description": "iOS, Android, React Native, and Flutter"
+      "name": "probability",
+      "category": "statistics",
+      "file": "skills/statistics/probability.md",
+      "description": "Probability fundamentals, distributions, Bayes theorem, and probability analysis."
     },
     {
-      "name": "game-development",
-      "category": "mobile-gaming",
-      "file": "skills/mobile-gaming/game-development.md",
-      "description": "Game engines, server-side gaming, and game architecture"
+      "name": "power-bi",
+      "category": "visualization",
+      "file": "skills/visualization/power-bi.md",
+      "description": "Power BI, dashboards, visualizations, and business intelligence reporting."
     },
     {
-      "name": "cross-platform-tools",
-      "category": "mobile-gaming",
-      "file": "skills/mobile-gaming/cross-platform-tools.md",
-      "description": "Flutter, React Native, and cross-platform strategies"
+      "name": "tableau",
+      "category": "visualization",
+      "file": "skills/visualization/tableau.md",
+      "description": "Tableau, data visualization, dashboard creation, and storytelling."
     },
     {
-      "name": "leadership-skills",
-      "category": "management-specialized",
-      "file": "skills/management-specialized/leadership-skills.md",
-      "description": "Management, mentoring, and team leadership"
+      "name": "data-visualization",
+      "category": "visualization",
+      "file": "skills/visualization/data-visualization.md",
+      "description": "Visualization principles, chart types, design, and visual communication."
     },
     {
-      "name": "qa-testing",
-      "category": "management-specialized",
-      "file": "skills/management-specialized/qa-testing.md",
-      "description": "QA automation, testing strategies, and quality assurance"
+      "name": "python-basics",
+      "category": "programming",
+      "file": "skills/programming/python-basics.md",
+      "description": "Python fundamentals, syntax, data types, and basic programming."
     },
     {
-      "name": "security-practices",
-      "category": "management-specialized",
-      "file": "skills/management-specialized/security-practices.md",
-      "description": "Cybersecurity, compliance, and security best practices"
+      "name": "pandas-numpy",
+      "category": "programming",
+      "file": "skills/programming/pandas-numpy.md",
+      "description": "Pandas, NumPy, data manipulation, analysis, and data structures."
     },
     {
-      "name": "blockchain-development",
-      "category": "management-specialized",
-      "file": "skills/management-specialized/blockchain-development.md",
-      "description": "Blockchain, smart contracts, and Web3 development"
+      "name": "r-programming",
+      "category": "programming",
+      "file": "skills/programming/r-programming.md",
+      "description": "R language, dplyr, ggplot2, and R for data analysis."
     },
     {
-      "name": "ai-safety",
-      "category": "management-specialized",
-      "file": "skills/management-specialized/ai-safety.md",
-      "description": "AI red-teaming, safety testing, and evaluation"
+      "name": "regression-analysis",
+      "category": "advanced",
+      "file": "skills/advanced/regression-analysis.md",
+      "description": "Linear regression, logistic regression, and regression modeling."
     },
     {
-      "name": "technical-writing",
-      "category": "management-specialized",
-      "file": "skills/management-specialized/technical-writing.md",
-      "description": "Documentation, content creation, and developer advocacy"
+      "name": "predictive-modeling",
+      "category": "advanced",
+      "file": "skills/advanced/predictive-modeling.md",
+      "description": "Predictive modeling, forecasting, and machine learning basics."
     },
     {
-      "name": "product-management",
-      "category": "management-specialized",
-      "file": "skills/management-specialized/product-management.md",
-      "description": "Product strategy, user research, and roadmapping"
+      "name": "data-mining",
+      "category": "advanced",
+      "file": "skills/advanced/data-mining.md",
+      "description": "Data mining, clustering, classification, and pattern discovery."
+    },
+    {
+      "name": "career-development",
+      "category": "career",
+      "file": "skills/career/career-development.md",
+      "description": "Career progression, portfolio building, and advancing as a data analyst."
+    },
+    {
+      "name": "communication-skills",
+      "category": "career",
+      "file": "skills/career/communication-skills.md",
+      "description": "Data storytelling, presentation skills, and stakeholder communication."
     }
   ],
   "hooks": {
@@ -250,23 +213,21 @@
   },
   "configuration": {
     "autoLoadSkills": true,
-    "skillTriggerKeywords": true,
     "enableProgressTracking": true,
-    "enableAssessments": true,
-    "enableCertificates": false
+    "enableProjects": true,
+    "enableCareerGuidance": true
   },
   "compatibility": {
-    "minClaudeCodeVersion": "0.5.0",
-    "maxClaudeCodeVersion": "*"
+    "minClaudeCodeVersion": "0.5.0"
   },
   "tags": [
+    "data-analyst",
+    "analytics",
+    "data-science",
     "learning",
-    "education",
-    "development",
-    "70-roles",
-    "7-agents",
-    "28-skills",
     "career-growth",
-    "comprehensive"
+    "sql",
+    "python",
+    "visualization"
   ]
 }
