@@ -1,0 +1,233 @@
+{
+  "name": "data-analyst-roadmap",
+  "version": "1.0.0",
+  "type": "plugin",
+  "displayName": "📊 Data Analyst Roadmap",
+  "description": "Complete Data Analyst learning platform with 7 specialized agents, hands-on projects, and career guidance. Master Excel, SQL, Python, Statistics, Power BI, and advance your analytics career from beginner to senior level.",
+  "author": "Claude Developer Learning Community",
+  "license": "MIT",
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-data-analyst",
+  "keywords": [
+    "data-analyst",
+    "data-analysis",
+    "learning",
+    "career-growth",
+    "sql",
+    "python",
+    "power-bi",
+    "statistics",
+    "visualization",
+    "spreadsheet",
+    "analytics"
+  ],
+  "agents": [
+    {
+      "id": "foundations-agent",
+      "name": "Foundations & Fundamentals Specialist",
+      "file": "agents/01-foundations-specialist.md",
+      "description": "Master data analysis fundamentals, Excel, Google Sheets, data collection, and core concepts for data analysts."
+    },
+    {
+      "id": "sql-databases-agent",
+      "name": "SQL & Databases Expert",
+      "file": "agents/02-sql-databases-expert.md",
+      "description": "Expert in SQL querying, database design, data retrieval, and working with relational databases."
+    },
+    {
+      "id": "statistics-agent",
+      "name": "Statistics & Statistical Analysis Specialist",
+      "file": "agents/03-statistics-specialist.md",
+      "description": "Master statistical analysis, hypothesis testing, probability, distributions, and inferential statistics."
+    },
+    {
+      "id": "visualization-agent",
+      "name": "Visualization & BI Tools Architect",
+      "file": "agents/04-visualization-architect.md",
+      "description": "Expert in Power BI, Tableau, Google Data Studio, dashboard design, and data storytelling."
+    },
+    {
+      "id": "programming-agent",
+      "name": "Python & R Programming Expert",
+      "file": "agents/05-programming-expert.md",
+      "description": "Master Python, R, pandas, NumPy, data manipulation, and programming for data analysis."
+    },
+    {
+      "id": "advanced-analytics-agent",
+      "name": "Advanced Analytics & Modeling Specialist",
+      "file": "agents/06-advanced-analytics-specialist.md",
+      "description": "Expert in predictive modeling, regression analysis, machine learning basics, and advanced analytics."
+    },
+    {
+      "id": "career-agent",
+      "name": "Career Development & Communication Coach",
+      "file": "agents/07-career-coach.md",
+      "description": "Guide for career progression, communication skills, leadership, and advancing as a data analyst."
+    }
+  ],
+  "commands": [
+    {
+      "name": "learn",
+      "file": "commands/learn.md",
+      "description": "Start your data analyst learning journey with personalized paths"
+    },
+    {
+      "name": "explore",
+      "file": "commands/explore.md",
+      "description": "Explore all 7 specialist agents and their expertise areas"
+    },
+    {
+      "name": "progress",
+      "file": "commands/progress.md",
+      "description": "Track your learning progress and get recommendations"
+    },
+    {
+      "name": "projects",
+      "file": "commands/projects.md",
+      "description": "Discover hands-on data analyst projects at all levels"
+    }
+  ],
+  "skills": [
+    {
+      "name": "excel-fundamentals",
+      "category": "foundations",
+      "file": "skills/foundations/excel-fundamentals.md",
+      "description": "Master Excel, formulas, pivot tables, data cleaning, and spreadsheet analysis."
+    },
+    {
+      "name": "google-sheets",
+      "category": "foundations",
+      "file": "skills/foundations/google-sheets.md",
+      "description": "Learn Google Sheets, collaborative features, and cloud-based analytics."
+    },
+    {
+      "name": "data-collection",
+      "category": "foundations",
+      "file": "skills/foundations/data-collection.md",
+      "description": "Master data collection, ingestion, API usage, and data sources."
+    },
+    {
+      "name": "sql-basics",
+      "category": "databases",
+      "file": "skills/databases-sql/sql-basics.md",
+      "description": "SQL fundamentals, SELECT, WHERE, JOIN, aggregation, and queries."
+    },
+    {
+      "name": "sql-advanced",
+      "category": "databases",
+      "file": "skills/databases-sql/sql-advanced.md",
+      "description": "Advanced SQL, window functions, CTEs, query optimization, and performance."
+    },
+    {
+      "name": "database-design",
+      "category": "databases",
+      "file": "skills/databases-sql/database-design.md",
+      "description": "Database design, normalization, indexing, and working with databases."
+    },
+    {
+      "name": "descriptive-statistics",
+      "category": "statistics",
+      "file": "skills/statistics/descriptive-statistics.md",
+      "description": "Mean, median, mode, variance, distribution, and data description."
+    },
+    {
+      "name": "inferential-statistics",
+      "category": "statistics",
+      "file": "skills/statistics/inferential-statistics.md",
+      "description": "Hypothesis testing, confidence intervals, p-values, and statistical inference."
+    },
+    {
+      "name": "probability",
+      "category": "statistics",
+      "file": "skills/statistics/probability.md",
+      "description": "Probability fundamentals, distributions, Bayes theorem, and probability analysis."
+    },
+    {
+      "name": "power-bi",
+      "category": "visualization",
+      "file": "skills/visualization/power-bi.md",
+      "description": "Power BI, dashboards, visualizations, and business intelligence reporting."
+    },
+    {
+      "name": "tableau",
+      "category": "visualization",
+      "file": "skills/visualization/tableau.md",
+      "description": "Tableau, data visualization, dashboard creation, and storytelling."
+    },
+    {
+      "name": "data-visualization",
+      "category": "visualization",
+      "file": "skills/visualization/data-visualization.md",
+      "description": "Visualization principles, chart types, design, and visual communication."
+    },
+    {
+      "name": "python-basics",
+      "category": "programming",
+      "file": "skills/programming/python-basics.md",
+      "description": "Python fundamentals, syntax, data types, and basic programming."
+    },
+    {
+      "name": "pandas-numpy",
+      "category": "programming",
+      "file": "skills/programming/pandas-numpy.md",
+      "description": "Pandas, NumPy, data manipulation, analysis, and data structures."
+    },
+    {
+      "name": "r-programming",
+      "category": "programming",
+      "file": "skills/programming/r-programming.md",
+      "description": "R language, dplyr, ggplot2, and R for data analysis."
+    },
+    {
+      "name": "regression-analysis",
+      "category": "advanced",
+      "file": "skills/advanced/regression-analysis.md",
+      "description": "Linear regression, logistic regression, and regression modeling."
+    },
+    {
+      "name": "predictive-modeling",
+      "category": "advanced",
+      "file": "skills/advanced/predictive-modeling.md",
+      "description": "Predictive modeling, forecasting, and machine learning basics."
+    },
+    {
+      "name": "data-mining",
+      "category": "advanced",
+      "file": "skills/advanced/data-mining.md",
+      "description": "Data mining, clustering, classification, and pattern discovery."
+    },
+    {
+      "name": "career-development",
+      "category": "career",
+      "file": "skills/career/career-development.md",
+      "description": "Career progression, portfolio building, and advancing as a data analyst."
+    },
+    {
+      "name": "communication-skills",
+      "category": "career",
+      "file": "skills/career/communication-skills.md",
+      "description": "Data storytelling, presentation skills, and stakeholder communication."
+    }
+  ],
+  "hooks": {
+    "file": "hooks/hooks.json"
+  },
+  "configuration": {
+    "autoLoadSkills": true,
+    "enableProgressTracking": true,
+    "enableProjects": true,
+    "enableCareerGuidance": true
+  },
+  "compatibility": {
+    "minClaudeCodeVersion": "0.5.0"
+  },
+  "tags": [
+    "data-analyst",
+    "analytics",
+    "data-science",
+    "learning",
+    "career-growth",
+    "sql",
+    "python",
+    "visualization"
+  ]
+}
