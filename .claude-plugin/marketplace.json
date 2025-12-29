@@ -1,0 +1,15 @@
+{
+  "name": "pluginagentmarketplace-data-analyst",
+  "owner": {
+    "name": "Plugin Agent Marketplace",
+    "email": "pluginagentmarketplace@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "data-analyst-roadmap",
+      "source": "./",
+      "description": "Claude Code plugin for data analyst development",
+      "version": "1.0.0"
+    }
+  ]
+}

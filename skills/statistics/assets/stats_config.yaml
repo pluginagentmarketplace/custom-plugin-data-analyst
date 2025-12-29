@@ -1,0 +1,4 @@
+# Statistics Configuration
+descriptive: [mean, median, mode, std, variance, percentiles]
+inferential: [t_test, chi_square, anova, regression]
+distributions: [normal, binomial, poisson]

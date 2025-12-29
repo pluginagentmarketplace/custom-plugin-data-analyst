@@ -1,0 +1,4 @@
+# Data Analyst Foundations
+tools: {spreadsheet: [Excel, Google Sheets], etl: [Power Query, OpenRefine]}
+data_types: [numerical, categorical, ordinal, datetime]
+file_formats: [CSV, JSON, Excel, Parquet]

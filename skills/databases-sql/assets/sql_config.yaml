@@ -1,0 +1,3 @@
+# SQL Configuration
+databases: [PostgreSQL, MySQL, SQLite, SQL Server, BigQuery]
+operations: [SELECT, JOIN, GROUP BY, WINDOW FUNCTIONS, CTEs]

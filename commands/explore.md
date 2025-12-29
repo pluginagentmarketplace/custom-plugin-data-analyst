@@ -1,3 +1,9 @@
+---
+name: explore
+description: /explore
+allowed-tools: Read
+---
+
 # /explore
 
 Explore all 7 specialist agents and their expertise areas.

@@ -1,3 +1,9 @@
+---
+name: learn
+description: /learn
+allowed-tools: Read
+---
+
 # /learn
 
 Start your personalized Data Analyst learning journey.

@@ -1,3 +1,9 @@
+---
+name: progress
+description: /progress
+allowed-tools: Read
+---
+
 # /progress
 
 Track your learning progress and get personalized recommendations.

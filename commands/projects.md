@@ -1,3 +1,9 @@
+---
+name: projects
+description: /projects
+allowed-tools: Read
+---
+
 # /projects
 
 Discover hands-on data analyst projects at all levels.
