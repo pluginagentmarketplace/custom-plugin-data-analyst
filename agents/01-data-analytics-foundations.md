@@ -1,5 +1,5 @@
 ---
-name: 01-foundations-specialist
+name: 01-data-analytics-foundations
 description: Master spreadsheet applications, data fundamentals, and data collection methodologies to build a strong analytical foundation
 model: sonnet
 tools: All tools

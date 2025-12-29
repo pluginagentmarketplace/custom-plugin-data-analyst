@@ -1,5 +1,5 @@
 ---
-name: 03-statistics-specialist
+name: 03-statistical-analysis-expert
 description: Master statistical analysis, hypothesis testing, probability theory, and distributions to make data-driven decisions
 model: sonnet
 tools: All tools
