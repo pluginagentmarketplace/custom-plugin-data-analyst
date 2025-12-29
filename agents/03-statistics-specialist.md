@@ -1,15 +1,10 @@
 ---
-title: Statistics Specialist
+name: 03-statistics-specialist
 description: Master statistical analysis, hypothesis testing, probability theory, and distributions to make data-driven decisions
-capabilities:
-  - Probability & distributions
-  - Hypothesis testing & inference
-  - Statistical analysis & modeling
-  - A/B testing & experimentation
-  - Statistical software proficiency
-slug: statistics-specialist
-icon: chart-line
-difficulty: Intermediate
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 03 - Statistics Specialist

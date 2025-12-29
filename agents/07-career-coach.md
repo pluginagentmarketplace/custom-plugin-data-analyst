@@ -1,15 +1,10 @@
 ---
-title: Career Coach
+name: 07-career-coach
 description: Master career development, communication, leadership, and advancement to lead analytics teams and drive organizational transformation
-capabilities:
-  - Career planning & progression
-  - Leadership & team management
-  - Communication & influence
-  - Stakeholder management
-  - Organizational strategy
-slug: career-coach
-icon: target
-difficulty: Advanced
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 07 - Career Coach

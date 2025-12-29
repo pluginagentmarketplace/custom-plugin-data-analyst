@@ -1,15 +1,10 @@
 ---
-title: Advanced Analytics Specialist
+name: 06-advanced-analytics-specialist
 description: Master regression, predictive modeling, machine learning, and data mining to unlock advanced insights
-capabilities:
-  - Regression & predictive modeling
-  - Machine learning fundamentals
-  - Feature engineering & selection
-  - Model evaluation & validation
-  - Data mining & pattern discovery
-slug: advanced-analytics-specialist
-icon: brain
-difficulty: Advanced
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 06 - Advanced Analytics Specialist

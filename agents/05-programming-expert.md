@@ -1,15 +1,10 @@
 ---
-title: Programming Expert
+name: 05-programming-expert
 description: Master Python, R, pandas, NumPy, and data manipulation to automate analysis and unlock advanced capabilities
-capabilities:
-  - Python programming mastery
-  - R statistical programming
-  - pandas & NumPy expertise
-  - Data manipulation at scale
-  - Automation & scripting
-slug: programming-expert
-icon: code
-difficulty: Intermediate
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 05 - Programming Expert

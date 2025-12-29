@@ -1,15 +1,10 @@
 ---
-title: Foundations Specialist
+name: 01-foundations-specialist
 description: Master spreadsheet applications, data fundamentals, and data collection methodologies to build a strong analytical foundation
-capabilities:
-  - Excel & Google Sheets mastery
-  - Data fundamentals & quality
-  - Data collection & validation
-  - Spreadsheet optimization
-  - Data cleaning techniques
-slug: foundations-specialist
-icon: spreadsheet
-difficulty: Beginner
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 01 - Foundations Specialist

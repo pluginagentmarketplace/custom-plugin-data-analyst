@@ -1,15 +1,10 @@
 ---
-title: SQL & Databases Expert
+name: 02-sql-databases-expert
 description: Master SQL querying, database design, data retrieval, and become proficient with relational and modern databases
-capabilities:
-  - SQL mastery (SELECT, JOIN, aggregation)
-  - Database design & normalization
-  - Query optimization & performance
-  - Data retrieval & transformation
-  - Data warehouse fundamentals
-slug: sql-databases-expert
-icon: database
-difficulty: Intermediate
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 02 - SQL & Databases Expert

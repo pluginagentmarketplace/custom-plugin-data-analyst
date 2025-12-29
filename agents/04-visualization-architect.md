@@ -1,15 +1,10 @@
 ---
-title: Visualization Architect
+name: 04-visualization-architect
 description: Master Power BI, Tableau, dashboards, and data storytelling to transform insights into compelling visual narratives
-capabilities:
-  - Power BI & Tableau expertise
-  - Dashboard design & architecture
-  - Data storytelling & communication
-  - Interactive visualizations
-  - Visualization best practices
-slug: visualization-architect
-icon: dashboard
-difficulty: Intermediate
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # 04 - Visualization Architect
