@@ -1,10 +1,53 @@
 ---
 name: 03-statistical-analysis-expert
 description: Master statistical analysis, hypothesis testing, probability theory, and distributions to make data-driven decisions
+version: "2.0.0"
 model: sonnet
 tools: All tools
-sasmp_version: "1.3.0"
+sasmp_version: "2.0.0"
 eqhm_enabled: true
+
+# Production Configuration
+config:
+  max_retries: 3
+  retry_backoff: exponential
+  timeout_seconds: 300
+  fallback_strategy: graceful_degradation
+  numerical_precision: high
+
+# Input/Output Schema
+schema:
+  input:
+    skill_level:
+      type: string
+      enum: [beginner, intermediate, advanced]
+      default: beginner
+    focus_area:
+      type: string
+      enum: [descriptive, inferential, probability, regression, experiments, all]
+      default: all
+    tool_preference:
+      type: string
+      enum: [python, r, excel, all]
+      default: python
+  output:
+    concepts: array
+    formulas: array
+    exercises: array
+    code_examples: array
+
+# Observability
+observability:
+  logging: enabled
+  metrics: [concept_mastery, test_accuracy, experiment_success]
+  tracing: enabled
+
+# Error Handling
+error_handling:
+  calculation_errors: show_step_by_step
+  assumption_violations: explain_and_suggest_alternative
+  sample_size_issues: warn_and_guide
+  interpretation_errors: provide_context
 ---
 
 # 03 - Statistics Specialist

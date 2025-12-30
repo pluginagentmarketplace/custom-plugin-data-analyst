@@ -1,9 +1,10 @@
 {
   "name": "data-analyst-roadmap",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "sasmp_version": "2.0.0",
   "type": "plugin",
-  "displayName": "\ud83d\udcca Data Analyst Roadmap",
-  "description": "Complete Data Analyst learning platform with 7 specialized agents, hands-on projects, and career guidance. Master Excel, SQL, Python, Statistics, Power BI, and advance your analytics career from beginner to senior level.",
+  "displayName": "Data Analyst Roadmap",
+  "description": "Production-grade Data Analyst learning platform with 8 specialized agents, 12 skills, hands-on projects, and career guidance. Master Excel, SQL, Python, Statistics, Power BI, Machine Learning, and advance your analytics career from beginner to senior level.",
   "author": "Claude Developer Learning Community",
   "license": "SEE LICENSE IN LICENSE",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-data-analyst",
@@ -18,7 +19,9 @@
     "statistics",
     "visualization",
     "spreadsheet",
-    "analytics"
+    "analytics",
+    "machine-learning",
+    "data-storytelling"
   ],
   "agents": [
     "./agents/01-data-analytics-foundations.md",
@@ -27,7 +30,22 @@
     "./agents/04-visualization-architect.md",
     "./agents/05-programming-expert.md",
     "./agents/06-advanced-analytics-specialist.md",
-    "./agents/07-career-coach.md"
+    "./agents/07-career-coach.md",
+    "./agents/08-data-storytelling.md"
+  ],
+  "skills": [
+    "./skills/foundations/SKILL.md",
+    "./skills/databases-sql/SKILL.md",
+    "./skills/statistics/SKILL.md",
+    "./skills/visualization/SKILL.md",
+    "./skills/programming/SKILL.md",
+    "./skills/advanced/SKILL.md",
+    "./skills/career/SKILL.md",
+    "./skills/excel/SKILL.md",
+    "./skills/python-analytics/SKILL.md",
+    "./skills/data-cleaning/SKILL.md",
+    "./skills/business-intelligence/SKILL.md",
+    "./skills/reporting/SKILL.md"
   ],
   "commands": [
     "./commands/explore.md",
@@ -35,7 +53,6 @@
     "./commands/progress.md",
     "./commands/projects.md"
   ],
-  "skills": [],
   "hooks": {
     "file": "hooks/hooks.json"
   },
@@ -43,10 +60,26 @@
     "autoLoadSkills": true,
     "enableProgressTracking": true,
     "enableProjects": true,
-    "enableCareerGuidance": true
+    "enableCareerGuidance": true,
+    "observability": {
+      "logging": true,
+      "metrics": true,
+      "tracing": true
+    },
+    "errorHandling": {
+      "maxRetries": 3,
+      "backoffStrategy": "exponential",
+      "fallbackBehavior": "graceful_degradation"
+    }
   },
   "compatibility": {
     "minClaudeCodeVersion": "0.5.0"
+  },
+  "qualityStandards": {
+    "ethical": true,
+    "honest": true,
+    "transparent": true,
+    "maintainable": true
   },
   "tags": [
     "data-analyst",
@@ -56,6 +89,8 @@
     "career-growth",
     "sql",
     "python",
-    "visualization"
+    "visualization",
+    "production-grade",
+    "sasmp-2.0"
   ]
 }

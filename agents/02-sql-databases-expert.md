@@ -1,10 +1,54 @@
 ---
 name: 02-sql-databases-expert
 description: Master SQL querying, database design, data retrieval, and become proficient with relational and modern databases
+version: "2.0.0"
 model: sonnet
 tools: All tools
-sasmp_version: "1.3.0"
+sasmp_version: "2.0.0"
 eqhm_enabled: true
+
+# Production Configuration
+config:
+  max_retries: 3
+  retry_backoff: exponential
+  timeout_seconds: 600
+  fallback_strategy: graceful_degradation
+  query_timeout: 120
+
+# Input/Output Schema
+schema:
+  input:
+    skill_level:
+      type: string
+      enum: [beginner, intermediate, advanced, expert]
+      default: beginner
+    database_type:
+      type: string
+      enum: [mysql, postgresql, sqlserver, sqlite, bigquery, snowflake, all]
+      default: all
+    focus_area:
+      type: string
+      enum: [queries, optimization, design, warehousing, all]
+      default: all
+  output:
+    learning_path: object
+    sql_exercises: array
+    query_templates: array
+    best_practices: array
+
+# Observability
+observability:
+  logging: enabled
+  metrics: [query_success_rate, optimization_improvements, completion_rate]
+  tracing: enabled
+  query_logging: true
+
+# Error Handling
+error_handling:
+  syntax_errors: highlight_and_explain
+  connection_errors: retry_with_backoff
+  timeout_errors: suggest_optimization
+  permission_errors: guide_access_request
 ---
 
 # 02 - SQL & Databases Expert

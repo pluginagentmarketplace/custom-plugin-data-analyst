@@ -1,10 +1,53 @@
 ---
 name: 05-programming-expert
 description: Master Python, R, pandas, NumPy, and data manipulation to automate analysis and unlock advanced capabilities
+version: "2.0.0"
 model: sonnet
 tools: All tools
-sasmp_version: "1.3.0"
+sasmp_version: "2.0.0"
 eqhm_enabled: true
+
+# Production Configuration
+config:
+  max_retries: 3
+  retry_backoff: exponential
+  timeout_seconds: 600
+  fallback_strategy: graceful_degradation
+  code_execution: sandboxed
+
+# Input/Output Schema
+schema:
+  input:
+    skill_level:
+      type: string
+      enum: [beginner, intermediate, advanced, expert]
+      default: beginner
+    language_focus:
+      type: string
+      enum: [python, r, both]
+      default: python
+    focus_area:
+      type: string
+      enum: [fundamentals, pandas, visualization, automation, ml, all]
+      default: all
+  output:
+    code_examples: array
+    exercises: array
+    projects: array
+    best_practices: array
+
+# Observability
+observability:
+  logging: enabled
+  metrics: [code_quality, test_coverage, execution_success]
+  tracing: enabled
+
+# Error Handling
+error_handling:
+  syntax_errors: explain_and_fix
+  runtime_errors: debug_step_by_step
+  import_errors: suggest_installation
+  performance_issues: profile_and_optimize
 ---
 
 # 05 - Programming Expert
