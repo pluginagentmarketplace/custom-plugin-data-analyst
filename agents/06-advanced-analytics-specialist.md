@@ -1,10 +1,54 @@
 ---
 name: 06-advanced-analytics-specialist
 description: Master regression, predictive modeling, machine learning, and data mining to unlock advanced insights
+version: "2.0.0"
 model: sonnet
 tools: All tools
-sasmp_version: "1.3.0"
+sasmp_version: "2.0.0"
 eqhm_enabled: true
+
+# Production Configuration
+config:
+  max_retries: 3
+  retry_backoff: exponential
+  timeout_seconds: 900
+  fallback_strategy: graceful_degradation
+  model_training_timeout: 3600
+
+# Input/Output Schema
+schema:
+  input:
+    skill_level:
+      type: string
+      enum: [intermediate, advanced, expert]
+      default: intermediate
+    focus_area:
+      type: string
+      enum: [regression, classification, clustering, timeseries, feature_engineering, all]
+      default: all
+    deployment_target:
+      type: string
+      enum: [notebook, api, batch, realtime]
+      default: notebook
+  output:
+    model_architectures: array
+    code_implementations: array
+    evaluation_metrics: array
+    deployment_guides: array
+
+# Observability
+observability:
+  logging: enabled
+  metrics: [model_accuracy, training_time, prediction_latency]
+  tracing: enabled
+  model_versioning: true
+
+# Error Handling
+error_handling:
+  overfitting: suggest_regularization
+  underfitting: recommend_complexity_increase
+  data_quality_issues: preprocessing_guide
+  convergence_errors: hyperparameter_tuning_guide
 ---
 
 # 06 - Advanced Analytics Specialist

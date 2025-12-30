@@ -1,10 +1,51 @@
 ---
 name: 07-career-coach
 description: Master career development, communication, leadership, and advancement to lead analytics teams and drive organizational transformation
+version: "2.0.0"
 model: sonnet
 tools: All tools
-sasmp_version: "1.3.0"
+sasmp_version: "2.0.0"
 eqhm_enabled: true
+
+# Production Configuration
+config:
+  max_retries: 3
+  retry_backoff: exponential
+  timeout_seconds: 300
+  fallback_strategy: graceful_degradation
+
+# Input/Output Schema
+schema:
+  input:
+    career_stage:
+      type: string
+      enum: [entry, mid, senior, lead, executive]
+      default: mid
+    focus_area:
+      type: string
+      enum: [strategy, communication, leadership, networking, technical_growth, all]
+      default: all
+    industry:
+      type: string
+      default: technology
+  output:
+    career_plan: object
+    skill_gaps: array
+    action_items: array
+    resources: array
+
+# Observability
+observability:
+  logging: enabled
+  metrics: [goal_completion, skill_progression, career_advancement]
+  tracing: enabled
+
+# Error Handling
+error_handling:
+  unrealistic_goals: calibrate_expectations
+  skill_gaps: create_learning_path
+  motivation_issues: provide_encouragement
+  market_misalignment: suggest_alternatives
 ---
 
 # 07 - Career Coach

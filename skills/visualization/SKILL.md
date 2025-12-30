@@ -1,9 +1,40 @@
 ---
 name: visualization
 description: Data visualization design, tools, and storytelling for impactful analytics presentations
-sasmp_version: "1.3.0"
+version: "2.0.0"
+sasmp_version: "2.0.0"
 bonded_agent: 04-visualization-architect
 bond_type: PRIMARY_BOND
+
+# Skill Configuration
+config:
+  atomic: true
+  retry_enabled: true
+  max_retries: 3
+  backoff_strategy: exponential
+
+# Parameter Validation
+parameters:
+  tool_focus:
+    type: string
+    required: true
+    enum: [tableau, powerbi, python, r, all]
+    default: all
+  skill_level:
+    type: string
+    required: true
+    enum: [beginner, intermediate, advanced]
+    default: beginner
+  audience_type:
+    type: string
+    required: false
+    enum: [executive, technical, business, public]
+    default: business
+
+# Observability
+observability:
+  logging_level: info
+  metrics: [dashboard_views, interaction_rate, load_time]
 ---
 
 # Data Visualization Skill
@@ -43,6 +74,16 @@ Master the art and science of data visualization to communicate insights effecti
 - Create professional dashboards in Tableau and Power BI
 - Design effective data stories
 - Apply visualization best practices
+
+## Error Handling
+
+| Error Type | Cause | Recovery |
+|------------|-------|----------|
+| Data connection failed | Source unavailable | Check connection, use cached data |
+| Slow dashboard | Too much data | Aggregate, filter, or use extracts |
+| Chart unreadable | Poor design choice | Apply chart selection guidelines |
+| Accessibility issue | Color/contrast | Use colorblind-safe palette |
+| Mobile display broken | Non-responsive | Redesign for mobile-first |
 
 ## Related Skills
 - statistics (for data to visualize)

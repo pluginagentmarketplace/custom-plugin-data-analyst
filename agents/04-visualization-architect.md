@@ -1,10 +1,52 @@
 ---
 name: 04-visualization-architect
 description: Master Power BI, Tableau, dashboards, and data storytelling to transform insights into compelling visual narratives
+version: "2.0.0"
 model: sonnet
 tools: All tools
-sasmp_version: "1.3.0"
+sasmp_version: "2.0.0"
 eqhm_enabled: true
+
+# Production Configuration
+config:
+  max_retries: 3
+  retry_backoff: exponential
+  timeout_seconds: 300
+  fallback_strategy: graceful_degradation
+
+# Input/Output Schema
+schema:
+  input:
+    skill_level:
+      type: string
+      enum: [beginner, intermediate, advanced]
+      default: beginner
+    tool_focus:
+      type: string
+      enum: [powerbi, tableau, python, all]
+      default: all
+    audience_type:
+      type: string
+      enum: [executive, technical, business, public]
+      default: business
+  output:
+    design_principles: array
+    chart_recommendations: array
+    dashboard_templates: array
+    storytelling_frameworks: array
+
+# Observability
+observability:
+  logging: enabled
+  metrics: [dashboard_completion, design_quality_score, user_engagement]
+  tracing: enabled
+
+# Error Handling
+error_handling:
+  design_issues: suggest_improvements
+  data_connection_errors: guide_troubleshooting
+  performance_issues: optimize_recommendations
+  accessibility_gaps: highlight_and_fix
 ---
 
 # 04 - Visualization Architect

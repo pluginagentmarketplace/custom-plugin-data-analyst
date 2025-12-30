@@ -1,10 +1,46 @@
 ---
 name: 01-data-analytics-foundations
 description: Master spreadsheet applications, data fundamentals, and data collection methodologies to build a strong analytical foundation
+version: "2.0.0"
 model: sonnet
 tools: All tools
-sasmp_version: "1.3.0"
+sasmp_version: "2.0.0"
 eqhm_enabled: true
+
+# Production Configuration
+config:
+  max_retries: 3
+  retry_backoff: exponential
+  timeout_seconds: 300
+  fallback_strategy: graceful_degradation
+
+# Input/Output Schema
+schema:
+  input:
+    skill_level:
+      type: string
+      enum: [beginner, intermediate, advanced]
+      default: beginner
+    focus_area:
+      type: string
+      enum: [excel, sheets, data_quality, all]
+      default: all
+  output:
+    learning_path: object
+    exercises: array
+    resources: array
+
+# Observability
+observability:
+  logging: enabled
+  metrics: [completion_rate, exercise_success, time_spent]
+  tracing: enabled
+
+# Error Handling
+error_handling:
+  validation_errors: prompt_user_correction
+  resource_unavailable: use_cached_fallback
+  timeout: extend_with_notification
 ---
 
 # 01 - Foundations Specialist
@@ -652,6 +688,76 @@ A: Not documenting, changing raw data, not using validation, ignoring version co
 
 ---
 
-**Last Updated**: November 2024
+## Troubleshooting Guide
+
+### Common Failure Modes & Solutions
+
+| Issue | Root Cause | Solution |
+|-------|------------|----------|
+| Excel formulas returning #REF! | Deleted referenced cells | Check cell references, use INDIRECT() for dynamic refs |
+| Large file slow/freezing | Too many calculations/data | Enable manual calculation, use Tables, archive old data |
+| VLOOKUP returns #N/A | Exact match not found | Use IFERROR(), check for trailing spaces with TRIM() |
+| Pivot table not updating | Data source changed | Right-click → Refresh, verify data range |
+| Google Sheets sync errors | Quota exceeded or offline | Wait and retry, check internet connection |
+
+### Debug Checklist
+
+```
+□ Step 1: Verify data source is accessible and valid
+□ Step 2: Check formula syntax (parentheses, commas, semicolons)
+□ Step 3: Validate data types match expected format
+□ Step 4: Test with smaller dataset first
+□ Step 5: Review error messages in formula bar
+□ Step 6: Check for circular references (File → Options → Formulas)
+□ Step 7: Verify regional settings (date/number formats)
+□ Step 8: Clear cache and restart application if needed
+```
+
+### Log Interpretation
+
+```
+ERROR: #VALUE! in cell B5
+├── Cause: Text in numeric operation
+├── Debug: Check data types with ISNUMBER(), ISTEXT()
+└── Fix: Use VALUE() or NUMBERVALUE() to convert
+
+ERROR: #NAME? in formula
+├── Cause: Unrecognized function or range name
+├── Debug: Verify function spelling, check named ranges
+└── Fix: Use correct function name, define missing range
+
+ERROR: Circular Reference Warning
+├── Cause: Formula references its own cell
+├── Debug: Formulas → Error Checking → Circular References
+└── Fix: Restructure formula logic, use helper columns
+```
+
+### Recovery Procedures
+
+1. **Data Loss Recovery**
+   ```
+   Excel: File → Info → Manage Workbook → Recover Unsaved
+   Sheets: File → Version history → See version history
+   ```
+
+2. **Corrupted File Recovery**
+   ```
+   Excel: Open → Browse → Select file → Open dropdown → Open and Repair
+   Backup: Check OneDrive/SharePoint version history
+   ```
+
+3. **Performance Recovery**
+   ```
+   1. Save and close file
+   2. Open new workbook
+   3. Copy data only (Paste Values)
+   4. Rebuild formulas incrementally
+   5. Archive unused sheets
+   ```
+
+---
+
+**Last Updated**: December 2024
 **Difficulty Level**: Beginner
 **Estimated Time to Completion**: 8-12 weeks
+**Version**: 2.0.0 Production-Grade
