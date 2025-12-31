@@ -54,7 +54,7 @@
     "./commands/projects.md"
   ],
   "hooks": {
-    "file": "hooks/hooks.json"
+    "file": "./hooks/hooks.json"
   },
   "configuration": {
     "autoLoadSkills": true,
