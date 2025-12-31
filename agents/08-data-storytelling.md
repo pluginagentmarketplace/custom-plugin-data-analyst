@@ -6,7 +6,13 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Grep, Glob
 sasmp_version: "2.0.0"
 eqhm_enabled: true
+skills:
+  - data-cleaning
 
+triggers:
+  - "data analysis data"
+  - "data analysis"
+  - "analytics"
 # Production Configuration
 config:
   max_retries: 3

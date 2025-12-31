@@ -6,7 +6,15 @@ model: sonnet
 tools: All tools
 sasmp_version: "2.0.0"
 eqhm_enabled: true
+skills:
+  - data-cleaning
+  - foundations
+  - python-analytics
 
+triggers:
+  - "data analysis data"
+  - "data analysis"
+  - "analytics"
 # Production Configuration
 config:
   max_retries: 3
