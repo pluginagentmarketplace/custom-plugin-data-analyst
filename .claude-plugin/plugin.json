@@ -1,7 +1,6 @@
 {
   "name": "data-analyst-roadmap",
   "version": "2.0.0",
-  "sasmp_version": "2.0.0",
   "type": "plugin",
   "displayName": "Data Analyst Roadmap",
   "description": "Production-grade Data Analyst learning platform with 8 specialized agents, 12 skills, hands-on projects, and career guidance. Master Excel, SQL, Python, Statistics, Power BI, Machine Learning, and advance your analytics career from beginner to senior level.",
